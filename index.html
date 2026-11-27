@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Jinyang Jia</title>
+<meta name="description" content="Jinyang Jia works on context engineering and agentic systems. Selected projects: ChatAnyLLM, EVPAgent, and Taoi.">
+<link rel="canonical" href="https://jinyang6.github.io/">
+<link rel="icon" href="avatar.jpg">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Jinyang Jia">
+<meta property="og:description" content="Context engineering and agentic systems. ChatAnyLLM, EVPAgent, and Taoi.">
+<meta property="og:url" content="https://jinyang6.github.io/">
+<meta property="og:image" content="https://jinyang6.github.io/avatar.jpg">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://jinyang6.github.io/#page",
+      "url": "https://jinyang6.github.io/",
+      "name": "Jinyang Jia",
+      "mainEntity": { "@id": "https://jinyang6.github.io/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://jinyang6.github.io/#person",
+      "name": "Jinyang Jia",
+      "givenName": "Jinyang",
+      "familyName": "Jia",
+      "alternateName": ["jinyang", "jinyang6"],
+      "url": "https://jinyang6.github.io/",
+      "image": "https://jinyang6.github.io/avatar.jpg",
+      "email": "mailto:jinyang062000@gmail.com",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Illinois Urbana-Champaign",
+        "url": "https://illinois.edu"
+      },
+      "knowsAbout": ["Context engineering", "Agentic systems", "Large language models"],
+      "sameAs": [
+        "https://github.com/jinyang6",
+        "https://jinyangjia.medium.com/",
+        "https://www.linkedin.com/in/jinyang-jia",
+        "https://jinyang6.github.io/workshop/"
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e6e6e6;
+    --link: #0969da;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    max-width: 43rem;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--text);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: #dbeafe;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-color: #b6d4f5;
+    text-underline-offset: 3px;
+  }
+
+  a:hover {
+    text-decoration-color: currentColor;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .avatar {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 1.4rem;
+    border-radius: 50%;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .tagline {
+    margin: 0.35rem 0 0;
+    font-size: 1.05rem;
+    color: var(--muted);
+  }
+
+  .bio {
+    max-width: 60ch;
+    margin: 1.2rem 0 1.5rem;
+    color: #333;
+  }
+
+  .profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.4rem;
+  }
+
+  h2 {
+    margin: 3.5rem 0 1.4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  .work {
+    display: grid;
+    gap: 1.9rem;
+  }
+
+  .work h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .work p,
+  .writing p {
+    max-width: 62ch;
+    margin: 0;
+    color: #444;
+  }
+
+  .meta {
+    margin-top: 0.45rem !important;
+    font-size: 0.9rem;
+    color: var(--muted) !important;
+  }
+
+  .meta span {
+    margin: 0 0.45rem;
+    color: #b0b0b0;
+  }
+
+  .writing ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .writing li + li {
+    margin-top: 1.25rem;
+  }
+
+  .writing a {
+    font-weight: 500;
+  }
+
+  .writing p {
+    margin-top: 0.15rem;
+    font-size: 0.93rem;
+    color: var(--muted);
+  }
+
+  .background p {
+    margin: 0.4rem 0;
+  }
+
+  .background .tools {
+    color: var(--muted);
+  }
+
+  footer {
+    margin-top: 4.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.875rem;
+    color: #6b6b6b;
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 3rem 1.25rem 2rem;
+      font-size: 16px;
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-size: 1.95rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<img class="avatar" src="avatar.jpg" alt="" width="72" height="72">
+
+<header>
+  <h1>Jinyang Jia</h1>
+  <p class="tagline">Context engineering and agentic systems.</p>
+  <p class="bio">
+    I build software around language models: a multi-provider desktop client, a Wikipedia research
+    agent, and a mobile app for planning outfits. I studied computer science at the University of
+    Illinois Urbana-Champaign.
+  </p>
+  <nav class="profiles" aria-label="Profiles">
+    <a href="https://github.com/jinyang6" rel="me">GitHub</a>
+    <a href="https://jinyangjia.medium.com/" rel="me">Medium</a>
+    <a href="https://www.linkedin.com/in/jinyang-jia" rel="me">LinkedIn</a>
+    <a href="https://jinyang6.github.io/workshop/" rel="me">Workshop</a>
+    <a href="mailto:jinyang062000@gmail.com">Email</a>
+  </nav>
+</header>
+
+<main>
+  <section aria-labelledby="work">
+    <h2 id="work">Selected work</h2>
+    <div class="work">
+      <article>
+        <h3>ChatAnyLLM</h3>
+        <p>
+          Desktop client for local and cloud models. One conversation can move between providers
+          without losing context, and all session data stays on your machine.
+        </p>
+        <p class="meta">
+          <a href="https://github.com/jinyang6/chatanyllm">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://jinyang6.github.io/chatanyllm/">Website</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>EVPAgent</h3>
+        <p>
+          Research agent that turns a question into a cited article. It searches Wikipedia, follows
+          evidence chains, and forms each new question from the last answer.
+        </p>
+        <p class="meta">
+          <a href="https://github.com/jinyang6/EVPAgent">GitHub</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>Taoi</h3>
+        <p>
+          AI outfit app. Wardrobe and outfit planning, image generation, and an agent that runs on
+          the phone, built with React Native and FastAPI.
+        </p>
+        <p class="meta">
+          <a href="https://www.rednote.com/discovery/item/6ae1d1c80000000013033800?xsec_token=ABZ02o6za68OHn78s8TwYm6EzU637z6ypN-xxKp0FsCys=&amp;xsec_source=pc_user">Preview on Rednote</a>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="writing" aria-labelledby="writing">
+    <h2 id="writing">Writing</h2>
+    <ul>
+      <li>
+        <a href="https://medium.com/@1804926965/how-to-switch-ai-models-without-losing-your-context-and-why-i-built-a-free-tool-to-do-it-24941cbcc0d2">How to switch AI models without losing your context</a>
+        <p>Why I built ChatAnyLLM, and what it takes to keep a conversation intact across providers.</p>
+      </li>
+      <li>
+        <a href="https://medium.com/@1804926965/llm-research-agent-finding-implicit-cross-references-relate-text-and-media-across-disparate-a08c0fbb0886">LLM research agent: finding implicit cross-references</a>
+        <p>How EVPAgent relates text and media across Wikipedia articles to answer complex questions.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="background" aria-labelledby="background">
+    <h2 id="background">Background</h2>
+    <p>University of Illinois Urbana-Champaign — B.S. and M.C.S. in Computer Science, 2023.</p>
+    <p class="tools">Python, TypeScript, React Native, Electron, FastAPI, LangGraph, SQLite.</p>
+  </section>
+</main>
+
+<footer>© 2026 Jinyang Jia</footer>
+
+</body>
+</html>
