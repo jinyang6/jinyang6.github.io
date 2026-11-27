@@ -140,22 +140,9 @@
   }
 
   .timeline {
-    position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-
-  /* One continuous line with rounded caps. */
-  .timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 2px;
-    border-radius: 999px;
-    background: var(--accent);
   }
 
   .timeline li {
@@ -163,18 +150,28 @@
     padding: 0 0 1.75rem 1.5rem;
   }
 
+  /* A rounded line segment connects each dot to the next. */
+  .timeline li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 1.25rem;
+    bottom: -0.3rem;
+    left: 0;
+    width: 3px;
+    border-radius: 999px;
+    background: var(--accent);
+  }
+
   .timeline li::before {
     content: "";
     position: absolute;
     top: 0.55rem;
-    left: -2.5px; /* centers the 7px dot on the 2px line */
+    left: -2px; /* centers the 7px dot on the 3px line */
     width: 7px;
     height: 7px;
     border-radius: 50%;
     /* Near-black dot; use var(--muted) for gray. */
     background: var(--text);
-    /* Paper-colored halo masks the line around the dot. */
-    box-shadow: 0 0 0 3px var(--background);
   }
 
   .timeline li:last-child {
@@ -296,7 +293,7 @@
       <li>
         <time datetime="2026-07">Jul 2026</time>
         <h3><a href="https://www.xiaohongshu.com/discovery/item/6ae1d1c80000000013033800?xsec_token=ABZ02o6za68OHn78s8TwYm6EzU637z6ypN-xxKp0FsCys=&amp;xsec_source=pc_user">Taoi</a></h3>
-        <p>AI outfit app built with React Native and FastAPI, covering wardrobe and outfit, image generation, accounts, and payments.</p>
+        <p>Outfit app built with langGraph and FastAPI, covering wardrobe and outfit, image generation, accounts, and payments.</p>
       </li>
       <li>
         <time datetime="2026-02-27">Feb 27, 2026</time>
