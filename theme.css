@@ -1,8 +1,9 @@
-/* Taoi theme tokens — the only place to change colors. */
+/* Taoi theme tokens — the only place to change colors.
+   Names map to Taoi's src/constants/theme.ts. */
 :root {
-  --background: #F5F2ED;
-  --text: #1A1A1C;
-  --muted: #6B655E;
-  --accent: #8B6A4E;
-  --accent-light: #D9B489;
+  --background: #F5F2ED;   /* surfaceAlt */
+  --text: #1A1A1C;         /* textPrimary */
+  --muted: #6B655E;        /* textSecondary */
+  --accent: #8B6A4E;       /* cognac */
+  --accent-light: #D9B489; /* cognacLight */
 }
