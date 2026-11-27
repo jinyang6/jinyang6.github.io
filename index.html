@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
 <title>Jinyang Jia</title>
-<meta name="description" content="Jinyang Jia works on context engineering and agentic systems. Experience, writing, and projects.">
+<meta name="description" content="Jinyang Jia works on context engineering and agentic systems. Projects, education, and writing.">
 <link rel="canonical" href="https://jinyang6.github.io/">
 <link rel="icon" href="avatar.jpg">
 <link rel="stylesheet" href="theme.css">
@@ -36,10 +36,9 @@
   },
   "knowsAbout": ["Context engineering", "Agentic systems", "Large language models"],
   "sameAs": [
-    "https://github.com/jinyang6",
-    "https://jinyangjia.medium.com/",
     "https://www.linkedin.com/in/jinyang-jia",
-    "https://sourceforge.net/u/jinyang6/profile"
+    "https://github.com/jinyang6",
+    "https://jinyangjia.medium.com/"
   ]
 }
 </script>
@@ -91,7 +90,8 @@
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     text-wrap: balance;
   }
 
@@ -103,7 +103,7 @@
   }
 
   h2 {
-    margin: 2.5rem 0 0.75rem;
+    margin: 0 0 0.9rem;
     font-size: 1.4rem;
     line-height: 1.3;
   }
@@ -113,35 +113,105 @@
     text-wrap: pretty;
   }
 
+  header p {
+    margin: 0;
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.25rem;
+    margin: 1rem 0 0 -0.75rem;
+  }
+
+  .icons a {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .icons a:hover {
+    background: var(--accent-light);
+  }
+
+  .icons svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  section {
+    margin-top: 2.5rem;
+  }
+
+  .timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .timeline li {
+    position: relative;
+    padding: 0 0 1.75rem 1.5rem;
+    border-left: 1px solid var(--border);
+  }
+
+  .timeline li::before {
+    content: "";
+    position: absolute;
+    top: 0.55rem;
+    left: -4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .timeline li:last-child {
+    padding-bottom: 0;
+  }
+
+  .timeline time {
+    display: block;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  .timeline h3 {
+    margin: 0.1rem 0 0.35rem;
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+  .timeline h3:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline p {
+    margin: 0;
+  }
+
   ul {
     margin: 0;
     padding-left: 1.2rem;
   }
 
-  li {
-    margin-bottom: 0.55rem;
+  ul li {
+    margin-bottom: 0.45rem;
     padding-left: 0.2rem;
   }
 
-  li::marker {
+  ul li::marker {
     color: var(--accent);
   }
 
   .meta {
     color: var(--muted);
-    font-size: 0.85rem;
-  }
-
-  .nowrap {
+    font-size: 0.82rem;
     white-space: nowrap;
-  }
-
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem 0.7rem;
-    margin-top: 1.25rem;
-    font-size: 0.95rem;
   }
 
   .skip-link {
@@ -181,97 +251,90 @@
 <main id="main">
   <header>
     <h1>Jinyang Jia</h1>
-    <p>
-      Context engineering and agentic systems. I build AI tools that keep context: a
-      multi-provider desktop client, a Wikipedia research agent, and an outfit app.
-    </p>
-    <nav class="links" aria-label="Profiles">
-      <a href="https://github.com/jinyang6" rel="me">GitHub</a>
-      <span aria-hidden="true">·</span>
-      <a href="https://jinyangjia.medium.com/" rel="me">Medium</a>
-      <span aria-hidden="true">·</span>
-      <a href="https://www.linkedin.com/in/jinyang-jia" rel="me">LinkedIn</a>
-      <span aria-hidden="true">·</span>
-      <a href="https://sourceforge.net/u/jinyang6/profile" rel="me">SourceForge</a>
+    <p>Context engineering and agentic systems.</p>
+
+    <!-- Profile links: LinkedIn, GitHub, Medium. -->
+    <nav class="icons" aria-label="Profiles">
+      <a href="https://www.linkedin.com/in/jinyang-jia" rel="me" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/jinyang6" rel="me" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/>
+        </svg>
+      </a>
+      <a href="https://jinyangjia.medium.com/" rel="me" aria-label="Medium">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75S24 8.83 24 12z"/>
+        </svg>
+      </a>
     </nav>
   </header>
 
-  <section aria-labelledby="experience">
-    <h2 id="experience">Experience</h2>
-    <ul>
-      <li>
-        <a href="https://www.rednote.com/discovery/item/6ae1d1c80000000013033800?xsec_token=ABZ02o6za68OHn78s8TwYm6EzU637z6ypN-xxKp0FsCys=&amp;xsec_source=pc_user">Taoi</a>
-        — independent developer, <span class="nowrap">2026–present</span>.<br>
-        AI outfit app built with React Native and FastAPI: wardrobe and outfit planning,
-        image generation, and payments. LangGraph agents run on the phone; a proxy keeps
-        model keys off the device.
-      </li>
-      <li>
-        <a href="https://github.com/jinyang6/EVPAgent">EVPAgent</a>
-        — independent developer, 2026.<br>
-        Research agent that asks one question at a time, searches Wikipedia, and follows
-        evidence chains into a cited article. Desktop app, CLI, and OpenAI-compatible API.
-      </li>
-      <li>
-        <a href="https://github.com/jinyang6/chatanyllm">ChatAnyLLM</a>
-        — independent developer, <span class="nowrap">2025–present</span>.<br>
-        Desktop client for local and cloud models. Switch providers mid-conversation
-        without losing context; sessions stay on your machine.
-      </li>
-    </ul>
-  </section>
+  <section aria-labelledby="timeline-title">
+    <h2 id="timeline-title">Projects &amp; education</h2>
 
-  <section aria-labelledby="education">
-    <h2 id="education">Education</h2>
-    <p>
-      University of Illinois Urbana-Champaign — B.S. and M.C.S. in Computer Science,
-      December 2023.
-    </p>
+    <!--
+      One timeline, newest first. Add an item by copying one <li>.
+      Project dates are GitHub repo creation dates. Descriptions are one
+      sentence copied verbatim from each repo. Education has no description.
+    -->
+    <ol class="timeline">
+      <li>
+        <time datetime="2026-02-27">Feb 27, 2026</time>
+        <h3><a href="https://github.com/jinyang6/EVPAgent">EVPAgent</a></h3>
+        <p>It searches Wikipedia, follows evidence chains across articles, and forms each new question from the last answer, iterating until scattered sources converge into one coherent article.</p>
+      </li>
+      <li>
+        <time datetime="2026-01-16">Jan 16, 2026</time>
+        <h3><a href="https://github.com/jinyang6/chatanyllm-agentic">ChatAnyLLM Agentic</a></h3>
+        <p>A desktop chat application for interacting with multiple AI language models through a unified interface, with autonomous capabilities for file editing, data processing, search, and automation.</p>
+      </li>
+      <li>
+        <time datetime="2026-01-02">Jan 2, 2026</time>
+        <h3><a href="https://github.com/jinyang6/workshop">Workshop</a></h3>
+        <p>Personal projects and experiments.</p>
+      </li>
+      <li>
+        <time datetime="2025-11-23">Nov 23, 2025</time>
+        <h3><a href="https://github.com/jinyang6/chatanyllm">ChatAnyLLM</a></h3>
+        <p>A desktop chat application that connects to any model provider or agentic system via OpenAI-compatible APIs.</p>
+      </li>
+      <li>
+        <time datetime="2025-03-18">Mar 18, 2025</time>
+        <h3><a href="https://github.com/jinyang6/spaceflight">Spaceflight</a></h3>
+        <p>An Apple-style minimalist website showcasing the cost efficiency of reusable rockets from different space launch providers, built with dynamic content loading.</p>
+      </li>
+      <li>
+        <time datetime="2024-12-30">Dec 30, 2024</time>
+        <h3><a href="https://github.com/jinyang6/Save-my-GPT-keys-ReactJS">Save My GPT Keys</a></h3>
+        <p>A simple desktop app to store your AI service API keys (ChatGPT, Gemini, etc.) locally on your computer.</p>
+      </li>
+      <li>
+        <time datetime="2022-08">Aug 2022 – Dec 2023</time>
+        <h3>University of Illinois Urbana-Champaign<br>Master of Computer Science</h3>
+      </li>
+      <li>
+        <time datetime="2018-08">Aug 2018 – May 2022</time>
+        <h3>University of Illinois Urbana-Champaign<br>Bachelor of Science, Computer Science</h3>
+      </li>
+    </ol>
   </section>
 
   <section aria-labelledby="writing">
     <h2 id="writing">Writing</h2>
     <ul>
       <li>
-        <a href="https://medium.com/@1804926965/how-to-switch-ai-models-without-losing-your-context-and-why-i-built-a-free-tool-to-do-it-24941cbcc0d2">How to Switch AI Models Without Losing Your Context</a><br>
-        <span class="meta">April 2026 · 4 min read</span>
+        <a href="https://medium.com/@1804926965/how-to-switch-ai-models-without-losing-your-context-and-why-i-built-a-free-tool-to-do-it-24941cbcc0d2">How to Switch AI Models Without Losing Your Context</a>
+        <span class="meta">(Apr 2026)</span>
       </li>
       <li>
-        <a href="https://medium.com/@1804926965/llm-research-agent-finding-implicit-cross-references-relate-text-and-media-across-disparate-a08c0fbb0886">LLM Research Agent: Finding Implicit Cross-References</a><br>
-        <span class="meta">July 2026 · 6 min read</span>
+        <a href="https://medium.com/@1804926965/llm-research-agent-finding-implicit-cross-references-relate-text-and-media-across-disparate-a08c0fbb0886">LLM Research Agent: Finding Implicit Cross-References</a>
+        <span class="meta">(Jul 2026)</span>
       </li>
     </ul>
-  </section>
-
-  <section aria-labelledby="projects">
-    <h2 id="projects">Projects</h2>
-    <ul>
-      <li>
-        <a href="https://github.com/jinyang6/chatanyllm">ChatAnyLLM</a>
-        — desktop client for local and cloud models. (<a href="https://jinyang6.github.io/chatanyllm/">site</a>)
-      </li>
-      <li>
-        <a href="https://github.com/jinyang6/EVPAgent">EVPAgent</a>
-        — Wikipedia research agent with citations.
-      </li>
-      <li>
-        <a href="https://github.com/jinyang6/chatanyllm-agentic">ChatAnyLLM Agentic</a>
-        — multi-provider assistant with local tools. (<a href="https://jinyang6.github.io/chatanyllm-agentic/">site</a>)
-      </li>
-      <li>
-        <a href="https://github.com/jinyang6/spaceflight">Spaceflight</a>
-        — reusable rocket cost comparison. (<a href="https://jinyang6.github.io/spaceflight/">site</a>)
-      </li>
-      <li>
-        <a href="https://github.com/jinyang6/Save-my-GPT-keys-ReactJS">Save My GPT Keys</a>
-        — local API key manager. (<a href="https://github.com/jinyang6/Save-my-GPT-keys-ReactJS/releases">download</a>)
-      </li>
-      <li>
-        <a href="https://github.com/jinyang6/workshop/tree/main/projects/my-google-flight-sim">Flight Simulator</a>
-        — browser-based flight simulator. (<a href="https://jinyang6.github.io/workshop/projects/my-google-flight-sim/">demo</a>)
-      </li>
-    </ul>
-    <p><a href="https://github.com/jinyang6">More on GitHub →</a></p>
   </section>
 </main>
 </body>

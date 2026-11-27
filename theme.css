@@ -4,6 +4,7 @@
   --background: #F5F2ED;   /* surfaceAlt */
   --text: #1A1A1C;         /* textPrimary */
   --muted: #6B655E;        /* textSecondary */
+  --border: #E5E0D8;       /* border */
   --accent: #8B6A4E;       /* cognac */
   --accent-light: #D9B489; /* cognacLight */
 }
