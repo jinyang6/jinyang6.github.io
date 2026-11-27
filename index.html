@@ -21,21 +21,47 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Jinyang Jia",
-  "alternateName": ["jinyang", "jinyang6"],
-  "url": "https://jinyang6.github.io/",
-  "jobTitle": "Independent developer",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "University of Illinois Urbana-Champaign",
-    "url": "https://illinois.edu"
-  },
-  "knowsAbout": ["Context engineering", "Agentic systems", "Large language models"],
-  "sameAs": [
-    "https://www.linkedin.com/in/jinyang-jia",
-    "https://github.com/jinyang6",
-    "https://jinyangjia.medium.com/"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://jinyang6.github.io/#website",
+      "url": "https://jinyang6.github.io/",
+      "name": "Jinyang Jia",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://jinyang6.github.io/#page",
+      "url": "https://jinyang6.github.io/",
+      "name": "Jinyang Jia (jinyang)",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://jinyang6.github.io/#website" },
+      "mainEntity": { "@id": "https://jinyang6.github.io/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://jinyang6.github.io/#person",
+      "name": "Jinyang Jia",
+      "givenName": "Jinyang",
+      "familyName": "Jia",
+      "alternateName": ["jinyang", "jinyang6", "jinyangjia", "jinyang-jia"],
+      "url": "https://jinyang6.github.io/",
+      "jobTitle": "Independent developer",
+      "description": "Independent developer working on context engineering and agentic systems.",
+      "mainEntityOfPage": { "@id": "https://jinyang6.github.io/#page" },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.wikidata.org/wiki/Q457281",
+        "name": "University of Illinois Urbana-Champaign",
+        "url": "https://illinois.edu/"
+      },
+      "knowsAbout": ["Context engineering", "Agentic systems", "Large language models"],
+      "sameAs": [
+        "https://www.linkedin.com/in/jinyang-jia",
+        "https://github.com/jinyang6",
+        "https://jinyangjia.medium.com/"
+      ]
+    }
   ]
 }
 </script>
