@@ -14,6 +14,7 @@ Keep it easy to edit: one static page, no build step, no JavaScript.
 - **Layout and type:** the `<style>` block in `index.html`. Text links are always underlined. There are no hover effects; keyboard focus is still visible.
 - **Timeline:** `index.html`, `ol.timeline`. Newest first. Project dates are repo creation dates; descriptions are one sentence from each repo. Education uses degree date ranges and has no description. Copy one `<li>` to add a project.
 - **Writing:** `index.html`, `section#writing`.
+- **Title separator:** use `|` between the name and tagline in metadata.
 - **Search metadata:** title, canonical, social tags, and the ProfilePage graph are in `index.html`. `robots.txt` and `sitemap.xml` are at the repo root. Update `lastmod` in the sitemap when the page changes.
 
 ## Search
