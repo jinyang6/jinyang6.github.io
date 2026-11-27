@@ -113,28 +113,6 @@
     margin: 0;
   }
 
-  .icons {
-    display: flex;
-    gap: 0.25rem;
-    margin: 1rem 0 0 -0.75rem;
-  }
-
-  .icons a {
-    display: grid;
-    place-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    text-decoration: none;
-    color: var(--accent);
-  }
-
-  .icons svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-  }
-
   section {
     margin-top: 2.5rem;
   }
@@ -259,25 +237,7 @@
     <h1>Jinyang Jia</h1>
     <p>Context engineering and agentic systems.</p>
 
-    <!-- Profile links: LinkedIn, GitHub, Medium. -->
-    <nav class="icons" aria-label="Profiles">
-      <a href="https://www.linkedin.com/in/jinyang-jia" rel="me" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
-        </svg>
-      </a>
-      <a href="https://github.com/jinyang6" rel="me" aria-label="GitHub">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/>
-        </svg>
-      </a>
-      <a href="https://jinyangjia.medium.com/" rel="me" aria-label="Medium">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75S24 8.83 24 12z"/>
-        </svg>
-      </a>
-    </nav>
-  </header>
+    </header>
 
   <section aria-labelledby="timeline-title">
     <h2 id="timeline-title">Projects &amp; education</h2>
@@ -293,17 +253,17 @@
       <li>
         <time datetime="2026-07">Jul 2026</time>
         <h3><a href="https://www.xiaohongshu.com/discovery/item/6ae1d1c80000000013033800?xsec_token=ABZ02o6za68OHn78s8TwYm6EzU637z6ypN-xxKp0FsCys=&amp;xsec_source=pc_user">Taoi</a></h3>
-        <p>Outfit app built with langGraph and FastAPI, covering wardrobe and outfit, image generation, accounts, and payments.</p>
+        <p>Outfit app built with LangGraph and FastAPI, covering wardrobe and outfit, image generation, accounts, and payments.</p>
       </li>
       <li>
         <time datetime="2026-02-27">Feb 27, 2026</time>
         <h3><a href="https://github.com/jinyang6/EVPAgent">EVPAgent</a></h3>
-        <p>It searches Wikipedia, follows evidence chains across articles, and forms each new question from the last answer, iterating until scattered sources converge into one coherent article.</p>
+        <p>It orchestrates subagents to search Wikipedia, form the next subquestion, iterating until scattered sources converge into one coherent article.</p>
       </li>
       <li>
         <time datetime="2026-01-16">Jan 16, 2026</time>
         <h3><a href="https://github.com/jinyang6/chatanyllm-agentic">ChatAnyLLM Agentic</a></h3>
-        <p>A desktop chat application for interacting with multiple AI language models through a unified interface, with autonomous capabilities for file editing, data processing, search, and automation.</p>
+        <p>A desktop chat application for interacting with multiple large language models through a unified interface, with file editing, search, and automation.</p>
       </li>
       <li>
         <time datetime="2025-11-23">Nov 23, 2025</time>
@@ -313,12 +273,12 @@
       <li>
         <time datetime="2025-03-18">Mar 18, 2025</time>
         <h3><a href="https://github.com/jinyang6/spaceflight">Spaceflight</a></h3>
-        <p>An Apple-style minimalist website showcasing the cost efficiency of reusable rockets from different space launch providers.</p>
+        <p>A website showcasing the cost efficiency of reusable rockets from different space launch providers.</p>
       </li>
       <li>
         <time datetime="2024-12-30">Dec 30, 2024</time>
         <h3><a href="https://github.com/jinyang6/Save-my-GPT-keys-ReactJS">Save My GPT Keys</a></h3>
-        <p>A simple desktop app to store your AI service API keys (ChatGPT, Gemini, etc.) locally on your computer.</p>
+        <p>A simple desktop app to store your service API keys (ChatGPT, Gemini, etc.) locally on your computer.</p>
       </li>
       <li>
         <time datetime="2022-08">Aug 2022 – Dec 2023</time>
