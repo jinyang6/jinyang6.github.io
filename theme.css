@@ -1,0 +1,8 @@
+/* Taoi theme tokens — the only place to change colors. */
+:root {
+  --background: #F5F2ED;
+  --text: #1A1A1C;
+  --muted: #6B655E;
+  --accent: #8B6A4E;
+  --accent-light: #D9B489;
+}

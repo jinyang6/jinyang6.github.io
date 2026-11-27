@@ -1,78 +1,50 @@
 <!DOCTYPE html>
 <!--
   Core requirement: clean, short, direct, professional, easy to read.
-  Keep this page simple: one static file, no framework, no build step, no JavaScript.
-  Structure follows karpathy.ai. Colors follow Taoi's src/constants/theme.ts.
+  Keep it easy to edit: one static page, no build step, no JavaScript.
+  Layout follows darioamodei.com. All colors live in theme.css.
 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
-<meta name="theme-color" content="#EEEAE4">
 <title>Jinyang Jia</title>
-<meta name="description" content="Jinyang Jia is an independent developer working on context engineering and agentic systems. Experience, writing, and projects.">
+<meta name="description" content="Jinyang Jia works on context engineering and agentic systems. Experience, writing, and projects.">
 <link rel="canonical" href="https://jinyang6.github.io/">
 <link rel="icon" href="avatar.jpg">
+<link rel="stylesheet" href="theme.css">
 
-<meta property="og:type" content="profile">
 <meta property="og:title" content="Jinyang Jia">
 <meta property="og:description" content="Context engineering and agentic systems.">
 <meta property="og:url" content="https://jinyang6.github.io/">
 <meta property="og:image" content="https://jinyang6.github.io/avatar.jpg">
-<meta property="profile:first_name" content="Jinyang">
-<meta property="profile:last_name" content="Jia">
-<meta name="twitter:card" content="summary">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ProfilePage",
-      "@id": "https://jinyang6.github.io/#page",
-      "url": "https://jinyang6.github.io/",
-      "name": "Jinyang Jia",
-      "mainEntity": { "@id": "https://jinyang6.github.io/#person" }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://jinyang6.github.io/#person",
-      "name": "Jinyang Jia",
-      "alternateName": ["jinyang", "jinyang6"],
-      "url": "https://jinyang6.github.io/",
-      "image": "https://jinyang6.github.io/avatar.jpg",
-      "jobTitle": "Independent developer",
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "University of Illinois Urbana-Champaign",
-        "url": "https://illinois.edu"
-      },
-      "knowsAbout": ["Context engineering", "Agentic systems", "Large language models"],
-      "sameAs": [
-        "https://github.com/jinyang6",
-        "https://jinyangjia.medium.com/",
-        "https://www.linkedin.com/in/jinyang-jia",
-        "https://sourceforge.net/u/jinyang6/profile"
-      ]
-    }
+  "@type": "Person",
+  "name": "Jinyang Jia",
+  "alternateName": ["jinyang", "jinyang6"],
+  "url": "https://jinyang6.github.io/",
+  "image": "https://jinyang6.github.io/avatar.jpg",
+  "jobTitle": "Independent developer",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Illinois Urbana-Champaign",
+    "url": "https://illinois.edu"
+  },
+  "knowsAbout": ["Context engineering", "Agentic systems", "Large language models"],
+  "sameAs": [
+    "https://github.com/jinyang6",
+    "https://jinyangjia.medium.com/",
+    "https://www.linkedin.com/in/jinyang-jia",
+    "https://sourceforge.net/u/jinyang6/profile"
   ]
 }
 </script>
 
 <style>
-  /* Taoi palette — see src/constants/theme.ts */
-  :root {
-    --background: #EEEAE4;
-    --surface: #FFFFFF;
-    --text-primary: #1A1A1C;
-    --text-secondary: #6B655E;
-    --border: #E5E0D8;
-    --cognac: #8B6A4E;
-    --cognac-light: #D9B489;
-    --radius: 20px;
-  }
-
   *,
   *::before,
   *::after {
@@ -84,49 +56,92 @@
   }
 
   body {
-    margin: 0;
-    padding: 2.5rem 1.5rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 17px;
-    line-height: 1.65;
-    color: var(--text-primary);
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 4rem;
     background: var(--background);
-    -webkit-font-smoothing: antialiased;
+    color: var(--text);
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.65;
   }
 
   ::selection {
-    background: var(--cognac-light);
-    color: var(--text-primary);
+    background: var(--accent-light);
+    color: var(--text);
   }
 
   a {
-    color: var(--cognac);
+    color: inherit;
     text-decoration: underline;
+    text-decoration-color: var(--accent);
     text-decoration-thickness: 1px;
-    text-decoration-color: var(--cognac-light);
     text-underline-offset: 3px;
     touch-action: manipulation;
   }
 
   a:hover {
-    color: var(--text-primary);
-    text-decoration-color: currentColor;
+    text-decoration-thickness: 2px;
   }
 
   a:focus-visible {
-    outline: 2px solid var(--cognac);
+    outline: 2px solid var(--accent);
     outline-offset: 3px;
     border-radius: 2px;
   }
 
   h1,
-  h2,
-  h3 {
+  h2 {
     text-wrap: balance;
   }
 
+  h1 {
+    margin: 0 0 1.25rem;
+    font-size: 2.25rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    margin: 2.5rem 0 0.75rem;
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
   p {
+    margin: 0 0 1rem;
     text-wrap: pretty;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  li {
+    margin-bottom: 0.55rem;
+    padding-left: 0.2rem;
+  }
+
+  li::marker {
+    color: var(--accent);
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.7rem;
+    margin-top: 1.25rem;
+    font-size: 0.95rem;
   }
 
   .skip-link {
@@ -134,266 +149,27 @@
     top: 0.75rem;
     left: 0.75rem;
     z-index: 10;
-    padding: 0.55rem 0.9rem;
+    padding: 0.5rem 0.85rem;
     border-radius: 999px;
-    background: var(--text-primary);
-    color: var(--surface);
+    background: var(--text);
+    color: var(--background);
     text-decoration: none;
     transform: translateY(-200%);
   }
 
   .skip-link:focus-visible {
     transform: none;
-    outline-color: var(--cognac-light);
-  }
-
-  .page {
-    max-width: 56rem;
-    margin: 0 auto;
-    padding: 3.5rem 4.5rem 2.5rem;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    box-shadow: 0 1px 3px rgba(26, 26, 28, 0.04);
-  }
-
-  .intro {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .avatar {
-    flex: none;
-    width: 152px;
-    height: 152px;
-    border: 1px solid var(--border);
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  h1 {
-    margin: 0 0 0.35rem;
-    font-size: 2.375rem;
-    font-weight: 600;
-    letter-spacing: -0.025em;
-    line-height: 1.1;
-  }
-
-  .tagline {
-    margin: 0 0 0.9rem;
-    font-size: 1.0625rem;
-    color: var(--text-secondary);
-  }
-
-  .bio {
-    max-width: 54ch;
-    margin: 0 0 1.25rem;
-  }
-
-  .contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem 1.4rem;
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-
-  section {
-    margin-top: 3.5rem;
-  }
-
-  h2 {
-    margin: 0 0 1.25rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-  }
-
-  .timeline {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .timeline li {
-    display: grid;
-    grid-template-columns: 6.5rem 1fr;
-    gap: 1.5rem;
-    padding: 1.35rem 0;
-    border-top: 1px solid var(--border);
-  }
-
-  .timeline li:first-child {
-    padding-top: 0;
-    border-top: 0;
-  }
-
-  .timeline li:last-child {
-    padding-bottom: 0;
-  }
-
-  .when {
-    padding-top: 0.15rem;
-    font-size: 0.8rem;
-    font-variant-numeric: tabular-nums;
-    color: var(--text-secondary);
-    white-space: nowrap;
-  }
-
-  h3 {
-    margin: 0;
-    font-size: 1.0625rem;
-    font-weight: 600;
-    line-height: 1.4;
-  }
-
-  .role {
-    margin-left: 0.45rem;
-    font-size: 0.83rem;
-    font-weight: 400;
-    color: var(--text-secondary);
-  }
-
-  .timeline p {
-    max-width: 60ch;
-    margin: 0.4rem 0 0;
-  }
-
-  .writing {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .writing li {
-    padding: 1.35rem 0;
-    border-top: 1px solid var(--border);
-  }
-
-  .writing li:first-child {
-    padding-top: 0;
-    border-top: 0;
-  }
-
-  .writing li:last-child {
-    padding-bottom: 0;
-  }
-
-  .meta {
-    margin: 0 0 0.3rem;
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-  }
-
-  .writing h3 {
-    margin-bottom: 0.35rem;
-    font-size: 1.15rem;
-    line-height: 1.45;
-  }
-
-  .writing p:last-child {
-    max-width: 64ch;
-    margin: 0;
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-  }
-
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25rem 2.5rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .projects li {
-    padding-top: 0.9rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .projects h3 {
-    margin-bottom: 0.25rem;
-    font-size: 1rem;
-  }
-
-  .projects p {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.55;
-    color: var(--text-secondary);
-  }
-
-  .more {
-    margin: 1.25rem 0 0;
-    font-size: 0.9rem;
-  }
-
-  footer {
-    margin-top: 3.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border);
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-  }
-
-  @media (max-width: 760px) {
-    body {
-      padding: 1.5rem 1rem;
-    }
-
-    .page {
-      padding: 2.75rem 2rem 2rem;
-    }
-
-    .avatar {
-      width: 120px;
-      height: 120px;
-    }
+    outline-color: var(--background);
   }
 
   @media (max-width: 600px) {
     body {
-      padding: 0.75rem;
-      font-size: 16px;
-    }
-
-    .page {
-      padding: 2rem 1.25rem 1.5rem;
-      border-radius: 16px;
-    }
-
-    .intro {
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 1.25rem;
-    }
-
-    .avatar {
-      width: 88px;
-      height: 88px;
+      padding: 3rem 1.25rem 2.5rem;
+      font-size: 18px;
     }
 
     h1 {
-      font-size: 2rem;
-    }
-
-    .timeline li {
-      grid-template-columns: 1fr;
-      gap: 0.15rem;
-    }
-
-    .when {
-      padding-top: 0;
-    }
-
-    .projects {
-      grid-template-columns: 1fr;
+      font-size: 1.9rem;
     }
   }
 </style>
@@ -402,146 +178,101 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<div class="page">
-  <header class="intro">
-    <img class="avatar" src="avatar.jpg" alt="" width="152" height="152" fetchpriority="high">
-    <div>
-      <h1>Jinyang Jia</h1>
-      <p class="tagline">Context engineering and agentic systems.</p>
-      <p class="bio">
-        I build AI tools that keep context: a multi-provider desktop client, a Wikipedia research
-        agent, and an outfit app. I studied computer science at UIUC.
-      </p>
-      <nav class="contact" aria-label="Profiles">
-        <a href="https://github.com/jinyang6" rel="me">GitHub</a>
-        <a href="https://jinyangjia.medium.com/" rel="me">Medium</a>
-        <a href="https://www.linkedin.com/in/jinyang-jia" rel="me">LinkedIn</a>
-        <a href="https://sourceforge.net/u/jinyang6/profile" rel="me">SourceForge</a>
-      </nav>
-    </div>
+<main id="main">
+  <header>
+    <h1>Jinyang Jia</h1>
+    <p>
+      Context engineering and agentic systems. I build AI tools that keep context: a
+      multi-provider desktop client, a Wikipedia research agent, and an outfit app.
+    </p>
+    <nav class="links" aria-label="Profiles">
+      <a href="https://github.com/jinyang6" rel="me">GitHub</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://jinyangjia.medium.com/" rel="me">Medium</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://www.linkedin.com/in/jinyang-jia" rel="me">LinkedIn</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://sourceforge.net/u/jinyang6/profile" rel="me">SourceForge</a>
+    </nav>
   </header>
 
-  <main id="main">
-    <section aria-labelledby="experience">
-      <h2 id="experience">Experience</h2>
-      <ol class="timeline" role="list">
-        <li>
-          <div class="when">2026 – Now</div>
-          <div>
-            <h3>
-              <a href="https://www.rednote.com/discovery/item/6ae1d1c80000000013033800?xsec_token=ABZ02o6za68OHn78s8TwYm6EzU637z6ypN-xxKp0FsCys=&amp;xsec_source=pc_user">Taoi</a>
-              <span class="role">Independent developer</span>
-            </h3>
-            <p>
-              AI outfit app built with React Native and FastAPI: wardrobe and outfit planning,
-              image generation, and payments. LangGraph agents run on the phone; a proxy keeps
-              model keys off the device.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="when">2026</div>
-          <div>
-            <h3>
-              <a href="https://github.com/jinyang6/EVPAgent">EVPAgent</a>
-              <span class="role">Independent developer</span>
-            </h3>
-            <p>
-              Research agent that asks one question at a time, searches Wikipedia, and follows
-              evidence chains into a cited article. Shipped as a desktop app, CLI, and
-              OpenAI-compatible API.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="when">2025 – Now</div>
-          <div>
-            <h3>
-              <a href="https://github.com/jinyang6/chatanyllm">ChatAnyLLM</a>
-              <span class="role">Independent developer</span>
-            </h3>
-            <p>
-              Desktop client for local and cloud models. Switch providers mid-conversation without
-              losing context; every session stays on your machine.
-            </p>
-          </div>
-        </li>
-      </ol>
-    </section>
+  <section aria-labelledby="experience">
+    <h2 id="experience">Experience</h2>
+    <ul>
+      <li>
+        <a href="https://www.rednote.com/discovery/item/6ae1d1c80000000013033800?xsec_token=ABZ02o6za68OHn78s8TwYm6EzU637z6ypN-xxKp0FsCys=&amp;xsec_source=pc_user">Taoi</a>
+        — independent developer, <span class="nowrap">2026–present</span>.<br>
+        AI outfit app built with React Native and FastAPI: wardrobe and outfit planning,
+        image generation, and payments. LangGraph agents run on the phone; a proxy keeps
+        model keys off the device.
+      </li>
+      <li>
+        <a href="https://github.com/jinyang6/EVPAgent">EVPAgent</a>
+        — independent developer, 2026.<br>
+        Research agent that asks one question at a time, searches Wikipedia, and follows
+        evidence chains into a cited article. Desktop app, CLI, and OpenAI-compatible API.
+      </li>
+      <li>
+        <a href="https://github.com/jinyang6/chatanyllm">ChatAnyLLM</a>
+        — independent developer, <span class="nowrap">2025–present</span>.<br>
+        Desktop client for local and cloud models. Switch providers mid-conversation
+        without losing context; sessions stay on your machine.
+      </li>
+    </ul>
+  </section>
 
-    <section aria-labelledby="education">
-      <h2 id="education">Education</h2>
-      <ol class="timeline" role="list">
-        <li>
-          <div class="when">Dec 2023</div>
-          <div>
-            <h3>University of Illinois Urbana-Champaign</h3>
-            <p>B.S. and M.C.S. in Computer Science.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
+  <section aria-labelledby="education">
+    <h2 id="education">Education</h2>
+    <p>
+      University of Illinois Urbana-Champaign — B.S. and M.C.S. in Computer Science,
+      December 2023.
+    </p>
+  </section>
 
-    <section aria-labelledby="writing">
-      <h2 id="writing">Writing</h2>
-      <ul class="writing" role="list">
-        <li>
-          <p class="meta">April 2026 · 4 min read · Medium</p>
-          <h3>
-            <a href="https://medium.com/@1804926965/how-to-switch-ai-models-without-losing-your-context-and-why-i-built-a-free-tool-to-do-it-24941cbcc0d2">How to Switch AI Models Without Losing Your Context</a>
-          </h3>
-          <p>
-            Switching models usually means losing the thread. ChatAnyLLM keeps one conversation
-            across providers and stores every session on your machine.
-          </p>
-        </li>
-        <li>
-          <p class="meta">July 2026 · 6 min read · Medium</p>
-          <h3>
-            <a href="https://medium.com/@1804926965/llm-research-agent-finding-implicit-cross-references-relate-text-and-media-across-disparate-a08c0fbb0886">LLM Research Agent: Finding Implicit Cross-References</a>
-          </h3>
-          <p>
-            An agent loop is only useful if it can find implicit relations between sources.
-            EVPAgent searches Wikipedia and a vector cache in parallel, then forms each next
-            question from the evidence.
-          </p>
-        </li>
-      </ul>
-    </section>
+  <section aria-labelledby="writing">
+    <h2 id="writing">Writing</h2>
+    <ul>
+      <li>
+        <a href="https://medium.com/@1804926965/how-to-switch-ai-models-without-losing-your-context-and-why-i-built-a-free-tool-to-do-it-24941cbcc0d2">How to Switch AI Models Without Losing Your Context</a><br>
+        <span class="meta">April 2026 · 4 min read</span>
+      </li>
+      <li>
+        <a href="https://medium.com/@1804926965/llm-research-agent-finding-implicit-cross-references-relate-text-and-media-across-disparate-a08c0fbb0886">LLM Research Agent: Finding Implicit Cross-References</a><br>
+        <span class="meta">July 2026 · 6 min read</span>
+      </li>
+    </ul>
+  </section>
 
-    <section aria-labelledby="projects">
-      <h2 id="projects">Projects</h2>
-      <ul class="projects" role="list">
-        <li>
-          <h3><a href="https://github.com/jinyang6/chatanyllm">ChatAnyLLM</a></h3>
-          <p>Desktop client for local and cloud models. <a href="https://jinyang6.github.io/chatanyllm/">Website</a></p>
-        </li>
-        <li>
-          <h3><a href="https://github.com/jinyang6/EVPAgent">EVPAgent</a></h3>
-          <p>Wikipedia research agent with citations.</p>
-        </li>
-        <li>
-          <h3><a href="https://github.com/jinyang6/chatanyllm-agentic">ChatAnyLLM Agentic</a></h3>
-          <p>Multi-provider assistant with local tools. <a href="https://jinyang6.github.io/chatanyllm-agentic/">Website</a></p>
-        </li>
-        <li>
-          <h3><a href="https://github.com/jinyang6/spaceflight">Spaceflight</a></h3>
-          <p>Reusable rocket cost comparison. <a href="https://jinyang6.github.io/spaceflight/">Website</a></p>
-        </li>
-        <li>
-          <h3><a href="https://github.com/jinyang6/Save-my-GPT-keys-ReactJS">Save My GPT Keys</a></h3>
-          <p>Local API key manager. <a href="https://github.com/jinyang6/Save-my-GPT-keys-ReactJS/releases">Download</a></p>
-        </li>
-        <li>
-          <h3><a href="https://github.com/jinyang6/workshop/tree/main/projects/my-google-flight-sim">Flight Simulator</a></h3>
-          <p>Browser-based flight simulator. <a href="https://jinyang6.github.io/workshop/projects/my-google-flight-sim/">Demo</a></p>
-        </li>
-      </ul>
-      <p class="more"><a href="https://github.com/jinyang6">More on GitHub →</a></p>
-    </section>
-  </main>
-
-  <footer>© 2026 Jinyang Jia</footer>
-</div>
+  <section aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/jinyang6/chatanyllm">ChatAnyLLM</a>
+        — desktop client for local and cloud models. (<a href="https://jinyang6.github.io/chatanyllm/">site</a>)
+      </li>
+      <li>
+        <a href="https://github.com/jinyang6/EVPAgent">EVPAgent</a>
+        — Wikipedia research agent with citations.
+      </li>
+      <li>
+        <a href="https://github.com/jinyang6/chatanyllm-agentic">ChatAnyLLM Agentic</a>
+        — multi-provider assistant with local tools. (<a href="https://jinyang6.github.io/chatanyllm-agentic/">site</a>)
+      </li>
+      <li>
+        <a href="https://github.com/jinyang6/spaceflight">Spaceflight</a>
+        — reusable rocket cost comparison. (<a href="https://jinyang6.github.io/spaceflight/">site</a>)
+      </li>
+      <li>
+        <a href="https://github.com/jinyang6/Save-my-GPT-keys-ReactJS">Save My GPT Keys</a>
+        — local API key manager. (<a href="https://github.com/jinyang6/Save-my-GPT-keys-ReactJS/releases">download</a>)
+      </li>
+      <li>
+        <a href="https://github.com/jinyang6/workshop/tree/main/projects/my-google-flight-sim">Flight Simulator</a>
+        — browser-based flight simulator. (<a href="https://jinyang6.github.io/workshop/projects/my-google-flight-sim/">demo</a>)
+      </li>
+    </ul>
+    <p><a href="https://github.com/jinyang6">More on GitHub →</a></p>
+  </section>
+</main>
 </body>
 </html>

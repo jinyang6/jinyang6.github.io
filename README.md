@@ -6,8 +6,10 @@ Personal site for Jinyang Jia: https://jinyang6.github.io/
 
 Clean, short, direct, professional, easy to read.
 
-Keep the site a single static page: system fonts, no build step, no JavaScript.
+Keep it easy to edit: one static page, no build step, no JavaScript.
 
 ## Design
 
-Structure follows [karpathy.ai](https://karpathy.ai/). Colors follow Taoi's `src/constants/theme.ts` — warm paper, white surface, cognac accent.
+Text-first layout in the spirit of [darioamodei.com](https://darioamodei.com/): narrow column, serif type, plain lists.
+
+All colors live in `theme.css` — the only file to edit for a theme change. The palette comes from Taoi's `src/constants/theme.ts`.
