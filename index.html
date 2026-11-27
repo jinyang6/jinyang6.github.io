@@ -155,11 +155,13 @@
     content: "";
     position: absolute;
     top: 0.55rem;
-    left: -4px;
+    left: -3px;
     width: 7px;
     height: 7px;
     border-radius: 50%;
     background: var(--accent);
+    /* Paper-colored halo masks the line around the dot. */
+    box-shadow: 0 0 0 3px var(--background);
   }
 
   .timeline li:last-child {
