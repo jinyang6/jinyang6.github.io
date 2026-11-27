@@ -148,7 +148,7 @@
   .timeline li {
     position: relative;
     padding: 0 0 1.75rem 1.5rem;
-    border-left: 1px solid var(--border);
+    border-left: 1px solid var(--accent); /* --text for a black line */
   }
 
   .timeline li::before {
@@ -159,7 +159,8 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: var(--accent);
+    /* Near-black dot; use var(--muted) for gray. */
+    background: var(--text);
     /* Paper-colored halo masks the line around the dot. */
     box-shadow: 0 0 0 3px var(--background);
   }
