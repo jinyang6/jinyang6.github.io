@@ -1,6 +1,49 @@
-/* Taoi theme tokens — the only place to change colors.
-   Names map to Taoi's src/constants/theme.ts. */
+/* Newsreader — the text face used by darioamodei.com.
+   SIL Open Font License 1.1. */
+@font-face {
+  font-family: "Newsreader";
+  src: url("fonts/Newsreader-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("fonts/Newsreader-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("fonts/Newsreader-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("fonts/Newsreader-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("fonts/Newsreader-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Theme — the only place to change fonts or colors.
+   Font: Newsreader. Colors map to Taoi's src/constants/theme.ts. */
 :root {
+  --font-text: "Newsreader", Georgia, serif;
   --background: #F5F2ED;   /* surfaceAlt */
   --text: #1A1A1C;         /* textPrimary */
   --muted: #6B655E;        /* textSecondary */
